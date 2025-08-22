@@ -4,6 +4,7 @@ Los paquetes que se instalaron fueron:
     sqlmodel
     pyjwt
     "passlib[bcrypt]"
+    python-dotenv
 
 La carpeta "database" solo contiene un archivo "connection.py", es la connexion a la base de datos y la creacion de nuestra session de la base de datos.
 

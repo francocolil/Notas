@@ -8,13 +8,17 @@ import module
 import security
 import database
 import module
+from dotenv import load_dotenv
+import os
 
 
 app = FastAPI()
 
+load_dotenv()
+
 database.database_create()
 
-EXPIRE_TOKEN_MINUTES = 30
+EXPIRE_TOKEN_MINUTES = int(os.getenv("EXPIRE_TOKEN_MINUTES", "30"))
 
 class Token(BaseModel):
     access_token: str

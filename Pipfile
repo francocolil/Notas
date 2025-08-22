@@ -8,6 +8,7 @@ fastapi = {extras = ["standard"], version = "*"}
 sqlmodel = "*"
 pyjwt = "*"
 passlib = {extras = ["bcrypt"], version = "*"}
+python-dotenv = "*"
 
 [dev-packages]
 

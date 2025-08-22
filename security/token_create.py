@@ -7,10 +7,13 @@ from typing import Annotated
 from pydantic import BaseModel
 import database
 import security
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
-SECRET_KEY = "d7d0db09eed56943969d0aedbbc14b86cec9f6f2f67c749353d6cb309a5a0218"
-ALGORITHM = "HS256"
+SECRET_KEY = os.getenv("SECRET_KEY")
+ALGORITHM = os.getenv("ALGORITHM")
 
 
 oauth2_scheme_token = OAuth2PasswordBearer(tokenUrl="token")
