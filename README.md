@@ -13,3 +13,5 @@ La carpeta "module" son los modulos o clases que se usan para este proyecto, com
 La carpeta "security" contiene dos archivos, uno es el "hash_password.py" el cual es contiene el schema que se usara para la encriptacion de la contraseña, dosfunciones las cuales es una para verificar que coincidan las contraseñas y la otra es para encriptar la contraseña del usuario.
 
 El archivo "main.py" contiene todas nuestras rutas HTTP
+
+La base de datos es sqlite
